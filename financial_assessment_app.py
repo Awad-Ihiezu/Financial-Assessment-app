@@ -17,7 +17,7 @@ except Exception as e:
 
 with st.expander("Data"):
     st.write('**Raw Data**')
-    df = pd.read_csv('https://raw.githubusercontent.com/Awad-Ihiezu/Financial-risk-app/refs/heads/main/Loan.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/Awad-Ihiezu/Financial-Assessment-app/refs/heads/main/Loan.csv')
     out = ["ApplicationDate", "Experience", "NumberOfDependents", "LoanPurpose", "JobTenure"]
     df.drop(out, axis= 1, inplace= True)
     df
