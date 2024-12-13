@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib as jb
+import Joblib
 import time
 
 # Streamlit app
