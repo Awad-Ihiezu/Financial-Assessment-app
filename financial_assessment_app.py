@@ -5,15 +5,13 @@ import time
 
 # Streamlit app
 st.title("💵Financial Assessment App")
-st.info("The app provides assessments of financial status for a potential loan approval")
+st.info("The app helps to provide assessments of financial status for a potential loan approval")
 
 # Load the model
 try:
     model1 = joblib.load('risk_score_model.pkl')
-    # model2 = joblib.load('loan_approval_model.pkl')
+    model2 = joblib.load('loan_approval_model.pkl')
     model3 = joblib.load('loan_amount_model.pkl')
-    with open('loan_approval_model.pkl', 'rb') as f:
-    model2 = pickle.load(f)
 except Exception as e:
     st.error(f"Failed to load models: {e}")
 
