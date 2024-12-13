@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from scikit-learn import joblib
+import joblib as jb
 import time
 
 # Streamlit app
